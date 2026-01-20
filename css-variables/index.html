@@ -302,15 +302,18 @@ body {
               <pre><code>const root = document.documentElement;
 
 /* Get a variable */
-const color = root.style.getPropertyValue('--primary');
+const color = root.style
+  .getPropertyValue('--primary')
+  .trim();
 
 /* Set a variable */
 root.style.setProperty('--primary', '#ff0000');
 
 /* Theme switcher */
-document.querySelectorAll('[data-theme]').forEach((btn) => {
+document.querySelectorAll('.vars-js-btn').forEach((btn) => {
   btn.addEventListener('click', function() {
-    root.style.setProperty('--primary', this.dataset.color);
+    const color = this.dataset.color;
+    root.style.setProperty('--primary', color);
   });
 });</code></pre>
             </div>
