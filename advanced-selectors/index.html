@@ -50,6 +50,7 @@
           <div class="nav-links" id="nav-links">
             <a href="../">Home</a>
             <a href="../#about">About</a>
+            <a href="../lab-exercises/">Lab Exercises</a>
             <div class="nav-dropdown">
               <button
                 type="button"
@@ -68,6 +69,7 @@
                 <a href="../animations/">Animations & Transitions</a>
                 <a href="../css-variables/">CSS Variables</a>
                 <a href="../advanced-selectors/">Advanced Selectors</a>
+                <a href="../quiz/">Quiz</a>
               </div>
             </div>
             <a
@@ -128,17 +130,17 @@
                 </svg>
                 Copy
               </button>
-              <pre><code>/* Descendant - all p inside .container */
-.container p { color: blue; }
+              <pre><code><span class="token-comment">/* Descendant - all p inside .container */</span>
+<span class="token-selector">.container p</span> <span class="token-operator">{</span> <span class="token-property">color</span><span class="token-operator">:</span> <span class="token-keyword">blue</span><span class="token-operator">;</span> <span class="token-operator">}</span>
 
-/* Child - only direct children */
-.container > p { color: red; }
+<span class="token-comment">/* Child - only direct children */</span>
+<span class="token-selector">.container > p</span> <span class="token-operator">{</span> <span class="token-property">color</span><span class="token-operator">:</span> <span class="token-keyword">red</span><span class="token-operator">;</span> <span class="token-operator">}</span>
 
-/* Adjacent Sibling - p immediately after h2 */
-h2 + p { font-weight: bold; }
+<span class="token-comment">/* Adjacent Sibling - p immediately after h2 */</span>
+<span class="token-selector">h2 + p</span> <span class="token-operator">{</span> <span class="token-property">font-weight</span><span class="token-operator">:</span> <span class="token-keyword">bold</span><span class="token-operator">;</span> <span class="token-operator">}</span>
 
-/* General Sibling - all p after h2 */
-h2 ~ p { margin-top: 1rem; }</code></pre>
+<span class="token-comment">/* General Sibling - all p after h2 */</span>
+<span class="token-selector">h2 ~ p</span> <span class="token-operator">{</span> <span class="token-property">margin-top</span><span class="token-operator">:</span> <span class="token-number">1rem</span><span class="token-operator">;</span> <span class="token-operator">}</span></code></pre>
             </div>
           </div>
           <div class="demo-visual">
@@ -175,23 +177,23 @@ h2 ~ p { margin-top: 1rem; }</code></pre>
                 </svg>
                 Copy
               </button>
-              <pre><code>/* Has attribute */
-[disabled] { opacity: 0.5; }
+              <pre><code><span class="token-comment">/* Has attribute */</span>
+<span class="token-selector">[disabled]</span> <span class="token-operator">{</span> <span class="token-property">opacity</span><span class="token-operator">:</span> <span class="token-number">0.5</span><span class="token-operator">;</span> <span class="token-operator">}</span>
 
-/* Exact value */
-input[type="text"] { border: 1px solid blue; }
+<span class="token-comment">/* Exact value */</span>
+<span class="token-selector">input[type=<span class="token-string">"text"</span>]</span> <span class="token-operator">{</span> <span class="token-property">border</span><span class="token-operator">:</span> <span class="token-number">1px</span> <span class="token-keyword">solid</span> <span class="token-keyword">blue</span><span class="token-operator">;</span> <span class="token-operator">}</span>
 
-/* Contains word */
-[class~="active"] { font-weight: bold; }
+<span class="token-comment">/* Contains word */</span>
+<span class="token-selector">[class~=<span class="token-string">"active"</span>]</span> <span class="token-operator">{</span> <span class="token-property">font-weight</span><span class="token-operator">:</span> <span class="token-keyword">bold</span><span class="token-operator">;</span> <span class="token-operator">}</span>
 
-/* Starts with */
-a[href^="https"] { color: green; }
+<span class="token-comment">/* Starts with */</span>
+<span class="token-selector">a[href^=<span class="token-string">"https"</span>]</span> <span class="token-operator">{</span> <span class="token-property">color</span><span class="token-operator">:</span> <span class="token-keyword">green</span><span class="token-operator">;</span> <span class="token-operator">}</span>
 
-/* Ends with */
-a[href$=".pdf"] { background: red; }
+<span class="token-comment">/* Ends with */</span>
+<span class="token-selector">a[href$=<span class="token-string">".pdf"</span>]</span> <span class="token-operator">{</span> <span class="token-property">background</span><span class="token-operator">:</span> <span class="token-keyword">red</span><span class="token-operator">;</span> <span class="token-operator">}</span>
 
-/* Contains substring */
-a[href*="example"] { color: purple; }</code></pre>
+<span class="token-comment">/* Contains substring */</span>
+<span class="token-selector">a[href*=<span class="token-string">"example"</span>]</span> <span class="token-operator">{</span> <span class="token-property">color</span><span class="token-operator">:</span> <span class="token-keyword">purple</span><span class="token-operator">;</span> <span class="token-operator">}</span></code></pre>
             </div>
           </div>
           <div class="demo-visual">
@@ -222,30 +224,30 @@ a[href*="example"] { color: purple; }</code></pre>
                 </svg>
                 Copy
               </button>
-              <pre><code>/* Add content before element */
-.icon::before {
-  content: "→ ";
-  color: var(--primary);
-  font-weight: bold;
-}
+              <pre><code><span class="token-comment">/* Add content before element */</span>
+<span class="token-selector">.icon::before</span> <span class="token-operator">{</span>
+  <span class="token-property">content</span><span class="token-operator">:</span> <span class="token-string">"→ "</span><span class="token-operator">;</span>
+  <span class="token-property">color</span><span class="token-operator">:</span> <span class="token-function">var</span><span class="token-operator">(</span><span class="token-string">--primary</span><span class="token-operator">);</span>
+  <span class="token-property">font-weight</span><span class="token-operator">:</span> <span class="token-keyword">bold</span><span class="token-operator">;</span>
+<span class="token-operator">}</span>
 
-/* Add content after element */
-.note::after {
-  content: " [Note]";
-  color: gray;
-}
+<span class="token-comment">/* Add content after element */</span>
+<span class="token-selector">.note::after</span> <span class="token-operator">{</span>
+  <span class="token-property">content</span><span class="token-operator">:</span> <span class="token-string">" [Note]"</span><span class="token-operator">;</span>
+  <span class="token-property">color</span><span class="token-operator">:</span> <span class="token-keyword">gray</span><span class="token-operator">;</span>
+<span class="token-operator">}</span>
 
-/* First letter - drop cap */
-p::first-letter {
-  font-size: 2em;
-  font-weight: bold;
-  color: var(--primary);
-}
+<span class="token-comment">/* First letter - drop cap */</span>
+<span class="token-selector">p::first-letter</span> <span class="token-operator">{</span>
+  <span class="token-property">font-size</span><span class="token-operator">:</span> <span class="token-number">2em</span><span class="token-operator">;</span>
+  <span class="token-property">font-weight</span><span class="token-operator">:</span> <span class="token-keyword">bold</span><span class="token-operator">;</span>
+  <span class="token-property">color</span><span class="token-operator">:</span> <span class="token-function">var</span><span class="token-operator">(</span><span class="token-string">--primary</span><span class="token-operator">);</span>
+<span class="token-operator">}</span>
 
-/* First line styling */
-p::first-line {
-  font-weight: bold;
-}</code></pre>
+<span class="token-comment">/* First line styling */</span>
+<span class="token-selector">p::first-line</span> <span class="token-operator">{</span>
+  <span class="token-property">font-weight</span><span class="token-operator">:</span> <span class="token-keyword">bold</span><span class="token-operator">;</span>
+<span class="token-operator">}</span></code></pre>
             </div>
           </div>
           <div class="demo-visual">
@@ -280,23 +282,23 @@ p::first-line {
                 </svg>
                 Copy
               </button>
-              <pre><code>/* Specificity = 1 (element) */
-p { color: black; }
+              <pre><code><span class="token-comment">/* Specificity = 1 (element) */</span>
+<span class="token-selector">p</span> <span class="token-operator">{</span> <span class="token-property">color</span><span class="token-operator">:</span> <span class="token-keyword">black</span><span class="token-operator">;</span> <span class="token-operator">}</span>
 
-/* Specificity = 10 (class) - WINS */
-.text { color: blue; }
+<span class="token-comment">/* Specificity = 10 (class) - WINS */</span>
+<span class="token-selector">.text</span> <span class="token-operator">{</span> <span class="token-property">color</span><span class="token-operator">:</span> <span class="token-keyword">blue</span><span class="token-operator">;</span> <span class="token-operator">}</span>
 
-/* Specificity = 100 (ID) - WINS OVER CLASS */
-#intro { color: red; }
+<span class="token-comment">/* Specificity = 100 (ID) - WINS OVER CLASS */</span>
+<span class="token-selector">#intro</span> <span class="token-operator">{</span> <span class="token-property">color</span><span class="token-operator">:</span> <span class="token-keyword">red</span><span class="token-operator">;</span> <span class="token-operator">}</span>
 
-/* Specificity = 11 (1 element + 1 class) */
-p.highlight { color: yellow; }
+<span class="token-comment">/* Specificity = 11 (1 element + 1 class) */</span>
+<span class="token-selector">p.highlight</span> <span class="token-operator">{</span> <span class="token-property">color</span><span class="token-operator">:</span> <span class="token-keyword">yellow</span><span class="token-operator">;</span> <span class="token-operator">}</span>
 
-/* Specificity = 101 (1 ID + 1 element) - WINS */
-#header p { color: green; }
+<span class="token-comment">/* Specificity = 101 (1 ID + 1 element) - WINS */</span>
+<span class="token-selector">#header p</span> <span class="token-operator">{</span> <span class="token-property">color</span><span class="token-operator">:</span> <span class="token-keyword">green</span><span class="token-operator">;</span> <span class="token-operator">}</span>
 
-/* Avoid: Specificity = 1000 (inline) - NEVER USE */
-&lt;p style="color: purple;"&gt;Don't do this&lt;/p&gt;</code></pre>
+<span class="token-comment">/* Avoid: Specificity = 1000 (inline) - NEVER USE */</span>
+&lt;<span class="token-selector">p</span> <span class="token-property">style</span><span class="token-operator">=</span><span class="token-string">"color: purple;"</span>&gt;Don't do this&lt;/<span class="token-selector">p</span>&gt;</code></pre>
             </div>
           </div>
           <div class="demo-visual">

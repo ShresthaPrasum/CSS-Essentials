@@ -50,6 +50,7 @@
           <div class="nav-links" id="nav-links">
             <a href="../">Home</a>
             <a href="../#about">About</a>
+            <a href="../lab-exercises/">Lab Exercises</a>
             <div class="nav-dropdown">
               <button
                 type="button"
@@ -68,6 +69,7 @@
                 <a href="../animations/">Animations & Transitions</a>
                 <a href="../css-variables/">CSS Variables</a>
                 <a href="../advanced-selectors/">Advanced Selectors</a>
+                <a href="../quiz/">Quiz</a>
               </div>
             </div>
             <a
@@ -128,17 +130,17 @@
                 </svg>
                 Copy
               </button>
-              <pre><code>.box {
-  width: 100px;
-  height: 100px;
-  background: var(--primary);
-  transition: all 0.3s ease;
-}
+              <pre><code><span class="token-selector">.box</span> <span class="token-operator">{</span>
+  <span class="token-property">width</span><span class="token-operator">:</span> <span class="token-number">100px</span><span class="token-operator">;</span>
+  <span class="token-property">height</span><span class="token-operator">:</span> <span class="token-number">100px</span><span class="token-operator">;</span>
+  <span class="token-property">background</span><span class="token-operator">:</span> <span class="token-function">var</span><span class="token-operator">(</span><span class="token-string">--primary</span><span class="token-operator">);</span>
+  <span class="token-property">transition</span><span class="token-operator">:</span> <span class="token-keyword">all</span> <span class="token-number">0.3s</span> <span class="token-keyword">ease</span><span class="token-operator">;</span>
+<span class="token-operator">}</span>
 
-.box:hover {
-  width: 200px;
-  background: var(--accent-2);
-}</code></pre>
+<span class="token-selector">.box:hover</span> <span class="token-operator">{</span>
+  <span class="token-property">width</span><span class="token-operator">:</span> <span class="token-number">200px</span><span class="token-operator">;</span>
+  <span class="token-property">background</span><span class="token-operator">:</span> <span class="token-function">var</span><span class="token-operator">(</span><span class="token-string">--accent-2</span><span class="token-operator">);</span>
+<span class="token-operator">}</span></code></pre>
             </div>
           </div>
           <div class="demo-visual">
@@ -162,14 +164,14 @@
                 </svg>
                 Copy
               </button>
-              <pre><code>.box {
-  transition: transform 0.5s ease-in-out;
-  /* ease, linear, ease-in, ease-out, ease-in-out */
-}
+              <pre><code><span class="token-selector">.box</span> <span class="token-operator">{</span>
+  <span class="token-property">transition</span><span class="token-operator">:</span> <span class="token-keyword">transform</span> <span class="token-number">0.5s</span> <span class="token-keyword">ease-in-out</span><span class="token-operator">;</span>
+  <span class="token-comment">/* ease, linear, ease-in, ease-out, ease-in-out */</span>
+<span class="token-operator">}</span>
 
-.box:hover {
-  transform: translateX(200px);
-}</code></pre>
+<span class="token-selector">.box:hover</span> <span class="token-operator">{</span>
+  <span class="token-property">transform</span><span class="token-operator">:</span> <span class="token-function">translateX</span><span class="token-operator">(</span><span class="token-number">200px</span><span class="token-operator">);</span>
+<span class="token-operator">}</span></code></pre>
             </div>
           </div>
           <div class="demo-visual">
@@ -208,16 +210,16 @@
                 </svg>
                 Copy
               </button>
-              <pre><code>@keyframes bounce {
-  0% { transform: translateY(0); }
-  50% { transform: translateY(-50px); }
-  100% { transform: translateY(0); }
-}
+              <pre><code><span class="token-keyword">@keyframes</span> <span class="token-function">bounce</span> <span class="token-operator">{</span>
+  <span class="token-number">0%</span> <span class="token-operator">{</span> <span class="token-property">transform</span><span class="token-operator">:</span> <span class="token-function">translateY</span><span class="token-operator">(</span><span class="token-number">0</span><span class="token-operator">);</span> <span class="token-operator">}</span>
+  <span class="token-number">50%</span> <span class="token-operator">{</span> <span class="token-property">transform</span><span class="token-operator">:</span> <span class="token-function">translateY</span><span class="token-operator">(</span><span class="token-number">-50px</span><span class="token-operator">);</span> <span class="token-operator">}</span>
+  <span class="token-number">100%</span> <span class="token-operator">{</span> <span class="token-property">transform</span><span class="token-operator">:</span> <span class="token-function">translateY</span><span class="token-operator">(</span><span class="token-number">0</span><span class="token-operator">);</span> <span class="token-operator">}</span>
+<span class="token-operator">}</span>
 
-.box {
-  animation: bounce 1s ease-in-out infinite;
-  /* name, duration, timing, iteration */
-}</code></pre>
+<span class="token-selector">.box</span> <span class="token-operator">{</span>
+  <span class="token-property">animation</span><span class="token-operator">:</span> <span class="token-keyword">bounce</span> <span class="token-number">1s</span> <span class="token-keyword">ease-in-out</span> <span class="token-keyword">infinite</span><span class="token-operator">;</span>
+  <span class="token-comment">/* name, duration, timing, iteration */</span>
+<span class="token-operator">}</span></code></pre>
             </div>
           </div>
           <div class="demo-visual">
@@ -249,20 +251,20 @@
                 </svg>
                 Copy
               </button>
-              <pre><code>/* ✅ Good - GPU accelerated */
-.box {
-  transition: transform 0.3s, opacity 0.3s;
-}
+              <pre><code><span class="token-comment">/* ✅ Good - GPU accelerated */</span>
+<span class="token-selector">.box</span> <span class="token-operator">{</span>
+  <span class="token-property">transition</span><span class="token-operator">:</span> <span class="token-keyword">transform</span> <span class="token-number">0.3s</span><span class="token-operator">,</span> <span class="token-keyword">opacity</span> <span class="token-number">0.3s</span><span class="token-operator">;</span>
+<span class="token-operator">}</span>
 
-.box:hover {
-  transform: scale(1.2) rotateY(180deg);
-  opacity: 0.8;
-}
+<span class="token-selector">.box:hover</span> <span class="token-operator">{</span>
+  <span class="token-property">transform</span><span class="token-operator">:</span> <span class="token-function">scale</span><span class="token-operator">(</span><span class="token-number">1.2</span><span class="token-operator">)</span> <span class="token-function">rotateY</span><span class="token-operator">(</span><span class="token-number">180deg</span><span class="token-operator">);</span>
+  <span class="token-property">opacity</span><span class="token-operator">:</span> <span class="token-number">0.8</span><span class="token-operator">;</span>
+<span class="token-operator">}</span>
 
-/* ❌ Avoid - causes layout recalculations */
-.box {
-  transition: width 0.3s, height 0.3s;
-}</code></pre>
+<span class="token-comment">/* ❌ Avoid - causes layout recalculations */</span>
+<span class="token-selector">.box</span> <span class="token-operator">{</span>
+  <span class="token-property">transition</span><span class="token-operator">:</span> <span class="token-keyword">width</span> <span class="token-number">0.3s</span><span class="token-operator">,</span> <span class="token-keyword">height</span> <span class="token-number">0.3s</span><span class="token-operator">;</span>
+<span class="token-operator">}</span></code></pre>
             </div>
           </div>
           <div class="demo-visual">

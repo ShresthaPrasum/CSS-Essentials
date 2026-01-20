@@ -50,6 +50,7 @@
           <div class="nav-links" id="nav-links">
             <a href="../">Home</a>
             <a href="../#about">About</a>
+            <a href="../lab-exercises/">Lab Exercises</a>
             <div class="nav-dropdown">
               <button
                 type="button"
@@ -68,6 +69,7 @@
                 <a href="../animations/">Animations & Transitions</a>
                 <a href="../css-variables/">CSS Variables</a>
                 <a href="../advanced-selectors/">Advanced Selectors</a>
+                <a href="../quiz/">Quiz</a>
               </div>
             </div>
             <a
@@ -130,14 +132,14 @@
                 </svg>
                 Copy
               </button>
-              <pre><code>.container {
-  display: flex;
-  flex-direction: row; /* row, column, row-reverse, column-reverse */
-}
+              <pre><code><span class="token-selector">.container</span> <span class="token-operator">{</span>
+  <span class="token-property">display</span><span class="token-operator">:</span> <span class="token-keyword">flex</span><span class="token-operator">;</span>
+  <span class="token-property">flex-direction</span><span class="token-operator">:</span> <span class="token-keyword">row</span><span class="token-operator">;</span> <span class="token-comment">/* row, column, row-reverse, column-reverse */</span>
+<span class="token-operator">}</span>
 
-.item {
-  flex: 1;
-}</code></pre>
+<span class="token-selector">.item</span> <span class="token-operator">{</span>
+  <span class="token-property">flex</span><span class="token-operator">:</span> <span class="token-number">1</span><span class="token-operator">;</span>
+<span class="token-operator">}</span></code></pre>
             </div>
           </div>
           <div class="demo-visual">
@@ -172,11 +174,11 @@
                 </svg>
                 Copy
               </button>
-              <pre><code>.container {
-  display: flex;
-  justify-content: center;
-  /* flex-start, flex-end, center, space-between, space-around, space-evenly */
-}</code></pre>
+              <pre><code><span class="token-selector">.container</span> <span class="token-operator">{</span>
+  <span class="token-property">display</span><span class="token-operator">:</span> <span class="token-keyword">flex</span><span class="token-operator">;</span>
+  <span class="token-property">justify-content</span><span class="token-operator">:</span> <span class="token-keyword">center</span><span class="token-operator">;</span>
+  <span class="token-comment">/* flex-start, flex-end, center, space-between, space-around, space-evenly */</span>
+<span class="token-operator">}</span></code></pre>
             </div>
           </div>
           <div class="demo-visual">
@@ -212,12 +214,12 @@
                 </svg>
                 Copy
               </button>
-              <pre><code>.container {
-  display: flex;
-  align-items: center;
-  height: 200px;
-  /* flex-start, flex-end, center, stretch, baseline */
-}</code></pre>
+              <pre><code><span class="token-selector">.container</span> <span class="token-operator">{</span>
+  <span class="token-property">display</span><span class="token-operator">:</span> <span class="token-keyword">flex</span><span class="token-operator">;</span>
+  <span class="token-property">align-items</span><span class="token-operator">:</span> <span class="token-keyword">center</span><span class="token-operator">;</span>
+  <span class="token-property">height</span><span class="token-operator">:</span> <span class="token-number">200px</span><span class="token-operator">;</span>
+  <span class="token-comment">/* flex-start, flex-end, center, stretch, baseline */</span>
+<span class="token-operator">}</span></code></pre>
             </div>
           </div>
           <div class="demo-visual">
@@ -251,18 +253,18 @@
                 </svg>
                 Copy
               </button>
-              <pre><code>.container {
-  display: flex;
-  gap: 1rem;
-}
+              <pre><code><span class="token-selector">.container</span> <span class="token-operator">{</span>
+  <span class="token-property">display</span><span class="token-operator">:</span> <span class="token-keyword">flex</span><span class="token-operator">;</span>
+  <span class="token-property">gap</span><span class="token-operator">:</span> <span class="token-number">1rem</span><span class="token-operator">;</span>
+<span class="token-operator">}</span>
 
-.item {
-  flex: 1; /* shorthand for grow: 1, shrink: 1 */
-}
+<span class="token-selector">.item</span> <span class="token-operator">{</span>
+  <span class="token-property">flex</span><span class="token-operator">:</span> <span class="token-number">1</span><span class="token-operator">;</span> <span class="token-comment">/* shorthand for grow: 1, shrink: 1 */</span>
+<span class="token-operator">}</span>
 
-.item.large {
-  flex: 2; /* grows twice as much */
-}</code></pre>
+<span class="token-selector">.item.large</span> <span class="token-operator">{</span>
+  <span class="token-property">flex</span><span class="token-operator">:</span> <span class="token-number">2</span><span class="token-operator">;</span> <span class="token-comment">/* grows twice as much */</span>
+<span class="token-operator">}</span></code></pre>
             </div>
           </div>
           <div class="demo-visual">
@@ -290,11 +292,11 @@
                 </svg>
                 Copy
               </button>
-              <pre><code>.container {
-  display: flex;
-  gap: 1rem; /* row gap and column gap */
-  gap: 1rem 2rem; /* row gap, column gap */
-}</code></pre>
+              <pre><code><span class="token-selector">.container</span> <span class="token-operator">{</span>
+  <span class="token-property">display</span><span class="token-operator">:</span> <span class="token-keyword">flex</span><span class="token-operator">;</span>
+  <span class="token-property">gap</span><span class="token-operator">:</span> <span class="token-number">1rem</span><span class="token-operator">;</span> <span class="token-comment">/* row gap and column gap */</span>
+  <span class="token-property">gap</span><span class="token-operator">:</span> <span class="token-number">1rem</span> <span class="token-number">2rem</span><span class="token-operator">;</span> <span class="token-comment">/* row gap, column gap */</span>
+<span class="token-operator">}</span></code></pre>
             </div>
           </div>
           <div class="demo-visual">

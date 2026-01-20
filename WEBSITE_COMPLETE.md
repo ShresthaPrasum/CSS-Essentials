@@ -200,6 +200,47 @@ All links are now active and functional!
 
 ---
 
+## 🧪 Assessment & Practice
+
+### Quiz Page ✅ (NEW)
+   - Location: `/quiz/`
+   - Features:
+     - 24 comprehensive questions covering all CSS topics
+     - 3 difficulty levels: Beginner, Advanced, Professional
+     - Multiple question types: Multiple-choice & Code challenges
+     - Hint system with "Too Difficult? Show Hint" button
+     - Progress tracking with localStorage
+     - Real-time statistics: Completed count, Score %, Streak
+     - Difficulty filtering: View all or specific levels
+     - Visual feedback: Instant success/error responses
+     - Explanations for every answer
+   - Perfect for: Testing theoretical knowledge
+
+### Lab Exercises Page ✅ (NEW)
+   - Location: `/lab-exercises/`
+   - Features:
+     - 8 hands-on practical CSS projects
+     - Beginner, Intermediate, and Advanced exercises
+     - Project-based learning with real-world scenarios
+     - Starter code provided for each exercise
+     - Learning objectives clearly defined
+     - Tips and hints for implementation
+     - Reference solutions for comparison
+     - Progress tracking with completion badges
+     - Difficulty filtering by level
+   - Exercises Include:
+     - Ball Bouncing Animation
+     - Responsive CSS Grid Layout
+     - Flexbox Navigation Menu
+     - Animated Button States
+     - Gradient Card Layout
+     - CSS Variables Theme System
+     - Advanced Selector Challenge
+     - Responsive Typography Scale
+   - Perfect for: Hands-on practical learning
+
+---
+
 ## 🎓 Learning Path Recommended
 
 **Beginner → Advanced:**
@@ -210,6 +251,8 @@ All links are now active and functional!
 5. CSS Variables (code organization)
 6. Advanced Selectors (precision targeting)
 7. Animations & Transitions (polish & motion)
+8. **Take the Quiz** (test your knowledge)
+9. **Complete Lab Exercises** (build real projects)
 
 ---
 

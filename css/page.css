@@ -216,6 +216,55 @@
   line-height: 1.6;
 }
 
+/* Syntax highlighting tokens */
+.token-selector {
+  color: #98c379;
+}
+
+.token-property {
+  color: #61afef;
+}
+
+.token-value {
+  color: #d19a66;
+}
+
+.token-string {
+  color: #e06c75;
+}
+
+.token-keyword {
+  color: #c678dd;
+}
+
+.token-comment {
+  color: #7f848e;
+}
+
+.token-function {
+  color: #56b6f2;
+}
+
+.token-number {
+  color: #d19a66;
+}
+
+.token-operator {
+  color: #abb2bf;
+}
+
+.token-unit {
+  color: #d19a66;
+}
+
+.token-variable {
+  color: #e06c75;
+}
+
+.token-method {
+  color: #61afef;
+}
+
 .demo-visual {
   margin-top: 2rem;
   padding: 2rem;

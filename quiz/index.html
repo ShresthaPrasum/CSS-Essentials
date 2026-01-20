@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz - CSS Essentials</title>
+    <link rel="icon" href="../favicon.png" />
+    <link rel="shortcut icon" href="../favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=Poppins:wght@700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/root.css" />
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/page.css" />
+    <link rel="stylesheet" href="quiz.css" />
+  </head>
+  <body class="quiz-page">
+    <nav class="navbar">
+      <div class="container">
+        <div class="nav-content">
+          <a href="../" class="nav-logo">
+            <img src="../prynix.png" alt="Prynix Logo" class="logo-img" />
+            <span class="logo-title">CSS Essentials</span>
+          </a>
+
+          <button
+            class="nav-toggle"
+            type="button"
+            aria-label="Open menu"
+            aria-expanded="false"
+            aria-controls="nav-links"
+          >
+            <svg
+              class="nav-toggle-icon"
+              width="22"
+              height="22"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+              stroke-linecap="round"
+            >
+              <path d="M4 7h16M4 12h16M4 17h16" />
+            </svg>
+          </button>
+
+          <div class="nav-links" id="nav-links">
+            <a href="../">Home</a>
+            <a href="../#about">About</a>
+            <a href="../lab-exercises/">Lab Exercises</a>
+            <div class="nav-dropdown">
+              <button
+                type="button"
+                class="nav-dropdown-toggle"
+                aria-expanded="false"
+                aria-controls="nav-dropdown-menu"
+              >
+                Workshop Topics <span class="nav-dropdown-caret">▾</span>
+              </button>
+              <div class="nav-dropdown-menu" id="nav-dropdown-menu">
+                <a href="../#topics">All Topics</a>
+                <a href="../pseudo-selectors/">Pseudo-Class Selectors</a>
+                <a href="../layout-methods/">Layout Methods</a>
+                <a href="../flexbox-mastery/">Flexbox Mastery</a>
+                <a href="../css-grid/">CSS Grid Layouts</a>
+                <a href="../animations/">Animations & Transitions</a>
+                <a href="../css-variables/">CSS Variables</a>
+                <a href="../advanced-selectors/">Advanced Selectors</a>
+                <a href="../quiz/">Quiz</a>
+              </div>
+            </div>
+            <a
+              href="https://github.com/ShresthaPrasum/CSS-Essentials"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="nav-cta"
+              >GitHub</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <header class="page-header">
+      <div class="container">
+        <a href="../" class="back-link">← Back to Home</a>
+        <h1>CSS Quiz</h1>
+        <p>Test your knowledge with interactive multiple-choice and code challenges.</p>
+      </div>
+    </header>
+
+    <main class="demo-page">
+      <div class="container">
+        <div class="quiz-controls">
+          <div class="difficulty-selector">
+            <label>Filter by difficulty:</label>
+            <div class="difficulty-buttons">
+              <button class="diff-btn active" data-difficulty="all">All Levels</button>
+              <button class="diff-btn" data-difficulty="beginner">Beginner</button>
+              <button class="diff-btn" data-difficulty="advanced">Advanced</button>
+              <button class="diff-btn" data-difficulty="professional">Professional</button>
+            </div>
+          </div>
+          <div class="stats-display">
+            <div class="stat">
+              <span class="stat-label">Completed:</span>
+              <span class="stat-value" id="completed">0</span>
+            </div>
+            <div class="stat">
+              <span class="stat-label">Score:</span>
+              <span class="stat-value" id="score">0%</span>
+            </div>
+            <div class="stat">
+              <span class="stat-label">Streak:</span>
+              <span class="stat-value" id="streak">0</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="quiz-container" id="quiz-container">
+          <!-- Quiz questions will be dynamically loaded here -->
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-inner">
+          <div class="footer-brand">
+            <div class="footer-name">CSS Essentials</div>
+            <p class="footer-desc">Learn CSS the right way.</p>
+          </div>
+
+          <div class="footer-right">
+            <ul class="footer-links">
+              <li><a href="../#topics">Topics</a></li>
+              <li><a href="../#about">About</a></li>
+              <li>
+                <a href="https://github.com/prynixdevs/CSS-Essentials" target="_blank"
+                  >GitHub</a
+                >
+              </li>
+            </ul>
+
+            <div class="footer-credits">
+              <p>Made by <strong>Prasum Shrestha & Prasoon Kandel</strong></p>
+              <p>© 2026 CSS Essentials Workshop</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../script.js"></script>
+    <script src="quiz.js"></script>
+  </body>
+</html>

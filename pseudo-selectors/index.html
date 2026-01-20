@@ -49,6 +49,7 @@
           <div class="nav-links" id="nav-links">
             <a href="../">Home</a>
             <a href="../#about">About</a>
+            <a href="../lab-exercises/">Lab Exercises</a>
             <div class="nav-dropdown">
               <button
                 type="button"
@@ -67,6 +68,7 @@
                 <a href="../animations/">Animations & Transitions</a>
                 <a href="../css-variables/">CSS Variables</a>
                 <a href="../advanced-selectors/">Advanced Selectors</a>
+                <a href="../quiz/">Quiz</a>
               </div>
             </div>
             <a
@@ -138,21 +140,20 @@
                 </svg>
                 Copy
               </button>
-              <pre><code>/* Base Style */
-.ps-page .demo-button {
-  padding: 1rem 2rem;
-  background: var(--primary);
-  color: white;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-}
+              <pre><code><span class="token-comment">/* Base Style */</span>
+<span class="token-selector">.ps-page .demo-button</span> <span class="token-operator">{</span>
+  <span class="token-property">padding</span><span class="token-operator">:</span> <span class="token-number">1rem</span> <span class="token-number">2rem</span><span class="token-operator">;</span>
+  <span class="token-property">background</span><span class="token-operator">:</span> <span class="token-function">var</span><span class="token-operator">(</span><span class="token-string">--primary</span><span class="token-operator">);</span>
+  <span class="token-property">color</span><span class="token-operator">:</span> <span class="token-keyword">white</span><span class="token-operator">;</span>
+  <span class="token-property">border</span><span class="token-operator">:</span> <span class="token-keyword">none</span><span class="token-operator">;</span>
+  <span class="token-property">border-radius</span><span class="token-operator">:</span> <span class="token-number">8px</span><span class="token-operator">;</span>
+  <span class="token-property">cursor</span><span class="token-operator">:</span> <span class="token-keyword">pointer</span><span class="token-operator">;</span>
+<span class="token-operator">}</span>
 
-/* Pseudo Class */
-.ps-hover .demo-button:hover {
-  background: var(--primary-dark);
-}
-</code></pre>
+<span class="token-comment">/* Pseudo Class */</span>
+<span class="token-selector">.ps-hover .demo-button:hover</span> <span class="token-operator">{</span>
+  <span class="token-property">background</span><span class="token-operator">:</span> <span class="token-function">var</span><span class="token-operator">(</span><span class="token-string">--primary-dark</span><span class="token-operator">);</span>
+<span class="token-operator">}</span></code></pre>
             </div>
           </div>
           <div class="demo-visual">
@@ -189,24 +190,23 @@
                 </svg>
                 Copy
               </button>
-              <pre><code>/* Base Style */
-.ps-page .demo-input {
-  width: 100%;
-  max-width: 400px;
-  padding: 0.875rem;
-  font-size: 1rem;
-  border: 2px solid var(--border);
-  border-radius: 8px;
-  font-family: "Montserrat", sans-serif;
-}
+              <pre><code><span class="token-comment">/* Base Style */</span>
+<span class="token-selector">.ps-page .demo-input</span> <span class="token-operator">{</span>
+  <span class="token-property">width</span><span class="token-operator">:</span> <span class="token-number">100%</span><span class="token-operator">;</span>
+  <span class="token-property">max-width</span><span class="token-operator">:</span> <span class="token-number">400px</span><span class="token-operator">;</span>
+  <span class="token-property">padding</span><span class="token-operator">:</span> <span class="token-number">0.875rem</span><span class="token-operator">;</span>
+  <span class="token-property">font-size</span><span class="token-operator">:</span> <span class="token-number">1rem</span><span class="token-operator">;</span>
+  <span class="token-property">border</span><span class="token-operator">:</span> <span class="token-number">2px</span> <span class="token-keyword">solid</span> <span class="token-function">var</span><span class="token-operator">(</span><span class="token-string">--border</span><span class="token-operator">);</span>
+  <span class="token-property">border-radius</span><span class="token-operator">:</span> <span class="token-number">8px</span><span class="token-operator">;</span>
+  <span class="token-property">font-family</span><span class="token-operator">:</span> <span class="token-string">"Montserrat"</span><span class="token-operator">,</span> <span class="token-keyword">sans-serif</span><span class="token-operator">;</span>
+<span class="token-operator">}</span>
 
-/* Pseudo Class */
-.ps-focus .demo-input:focus {
-  border-color: var(--primary);
-  outline: 3px solid var(--primary);
-  outline-offset: 3px;
-}
-</code></pre>
+<span class="token-comment">/* Pseudo Class */</span>
+<span class="token-selector">.ps-focus .demo-input:focus</span> <span class="token-operator">{</span>
+  <span class="token-property">border-color</span><span class="token-operator">:</span> <span class="token-function">var</span><span class="token-operator">(</span><span class="token-string">--primary</span><span class="token-operator">);</span>
+  <span class="token-property">outline</span><span class="token-operator">:</span> <span class="token-number">3px</span> <span class="token-keyword">solid</span> <span class="token-function">var</span><span class="token-operator">(</span><span class="token-string">--primary</span><span class="token-operator">);</span>
+  <span class="token-property">outline-offset</span><span class="token-operator">:</span> <span class="token-number">3px</span><span class="token-operator">;</span>
+<span class="token-operator">}</span></code></pre>
             </div>
           </div>
           <div class="demo-visual">
@@ -246,22 +246,21 @@
                 </svg>
                 Copy
               </button>
-              <pre><code>/* Base Style */
-.ps-page .demo-button {
-  padding: 1rem 2rem;
-  background: var(--primary);
-  color: white;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-}
+              <pre><code><span class="token-comment">/* Base Style */</span>
+<span class="token-selector">.ps-page .demo-button</span> <span class="token-operator">{</span>
+  <span class="token-property">padding</span><span class="token-operator">:</span> <span class="token-number">1rem</span> <span class="token-number">2rem</span><span class="token-operator">;</span>
+  <span class="token-property">background</span><span class="token-operator">:</span> <span class="token-function">var</span><span class="token-operator">(</span><span class="token-string">--primary</span><span class="token-operator">);</span>
+  <span class="token-property">color</span><span class="token-operator">:</span> <span class="token-keyword">white</span><span class="token-operator">;</span>
+  <span class="token-property">border</span><span class="token-operator">:</span> <span class="token-keyword">none</span><span class="token-operator">;</span>
+  <span class="token-property">border-radius</span><span class="token-operator">:</span> <span class="token-number">8px</span><span class="token-operator">;</span>
+  <span class="token-property">cursor</span><span class="token-operator">:</span> <span class="token-keyword">pointer</span><span class="token-operator">;</span>
+<span class="token-operator">}</span>
 
-/* Pseudo Class */
-.ps-active .demo-button:active {
-  transform: translateY(1px);
-  background: var(--primary-dark);
-}
-</code></pre>
+<span class="token-comment">/* Pseudo Class */</span>
+<span class="token-selector">.ps-active .demo-button:active</span> <span class="token-operator">{</span>
+  <span class="token-property">transform</span><span class="token-operator">:</span> <span class="token-function">translateY</span><span class="token-operator">(</span><span class="token-number">1px</span><span class="token-operator">);</span>
+  <span class="token-property">background</span><span class="token-operator">:</span> <span class="token-function">var</span><span class="token-operator">(</span><span class="token-string">--primary-dark</span><span class="token-operator">);</span>
+<span class="token-operator">}</span></code></pre>
             </div>
           </div>
           <div class="demo-visual">
@@ -297,26 +296,25 @@
                 </svg>
                 Copy
               </button>
-              <pre><code>/* Base Style */
-.demo-item {
-  padding: 1rem;
-  margin-bottom: 0.5rem;
-  border-radius: 6px;
-  font-weight: 600;
-  text-align: center;
-}
+              <pre><code><span class="token-comment">/* Base Style */</span>
+<span class="token-selector">.demo-item</span> <span class="token-operator">{</span>
+  <span class="token-property">padding</span><span class="token-operator">:</span> <span class="token-number">1rem</span><span class="token-operator">;</span>
+  <span class="token-property">margin-bottom</span><span class="token-operator">:</span> <span class="token-number">0.5rem</span><span class="token-operator">;</span>
+  <span class="token-property">border-radius</span><span class="token-operator">:</span> <span class="token-number">6px</span><span class="token-operator">;</span>
+  <span class="token-property">font-weight</span><span class="token-operator">:</span> <span class="token-number">600</span><span class="token-operator">;</span>
+  <span class="token-property">text-align</span><span class="token-operator">:</span> <span class="token-keyword">center</span><span class="token-operator">;</span>
+<span class="token-operator">}</span>
 
-/* Pseudo Class */
-.demo-item:nth-child(odd) {
-  background: var(--primary);
-  color: white;
-}
+<span class="token-comment">/* Pseudo Class */</span>
+<span class="token-selector">.demo-item:nth-child(odd)</span> <span class="token-operator">{</span>
+  <span class="token-property">background</span><span class="token-operator">:</span> <span class="token-function">var</span><span class="token-operator">(</span><span class="token-string">--primary</span><span class="token-operator">);</span>
+  <span class="token-property">color</span><span class="token-operator">:</span> <span class="token-keyword">white</span><span class="token-operator">;</span>
+<span class="token-operator">}</span>
 
-.demo-item:nth-child(even) {
-  background: var(--accent-2);
-  color: var(--dark);
-}
-</code></pre>
+<span class="token-selector">.demo-item:nth-child(even)</span> <span class="token-operator">{</span>
+  <span class="token-property">background</span><span class="token-operator">:</span> <span class="token-function">var</span><span class="token-operator">(</span><span class="token-string">--accent-2</span><span class="token-operator">);</span>
+  <span class="token-property">color</span><span class="token-operator">:</span> <span class="token-function">var</span><span class="token-operator">(</span><span class="token-string">--dark</span><span class="token-operator">);</span>
+<span class="token-operator">}</span></code></pre>
             </div>
           </div>
           <div class="demo-visual">
@@ -358,27 +356,26 @@
                 </svg>
                 Copy
               </button>
-              <pre><code>/* Base Style */
-.list-item {
-  padding: 1rem;
-  background: #e0e0e0;
-  color: var(--dark);
-  margin-bottom: 8px;
-  text-align: center;
-  border-radius: 6px;
-}
+              <pre><code><span class="token-comment">/* Base Style */</span>
+<span class="token-selector">.list-item</span> <span class="token-operator">{</span>
+  <span class="token-property">padding</span><span class="token-operator">:</span> <span class="token-number">1rem</span><span class="token-operator">;</span>
+  <span class="token-property">background</span><span class="token-operator">:</span> <span class="token-string">#e0e0e0</span><span class="token-operator">;</span>
+  <span class="token-property">color</span><span class="token-operator">:</span> <span class="token-function">var</span><span class="token-operator">(</span><span class="token-string">--dark</span><span class="token-operator">);</span>
+  <span class="token-property">margin-bottom</span><span class="token-operator">:</span> <span class="token-number">8px</span><span class="token-operator">;</span>
+  <span class="token-property">text-align</span><span class="token-operator">:</span> <span class="token-keyword">center</span><span class="token-operator">;</span>
+  <span class="token-property">border-radius</span><span class="token-operator">:</span> <span class="token-number">6px</span><span class="token-operator">;</span>
+<span class="token-operator">}</span>
 
-/* Pseudo Class */
-.list-item:first-child {
-  background: var(--primary);
-  color: white;
-}
+<span class="token-comment">/* Pseudo Class */</span>
+<span class="token-selector">.list-item:first-child</span> <span class="token-operator">{</span>
+  <span class="token-property">background</span><span class="token-operator">:</span> <span class="token-function">var</span><span class="token-operator">(</span><span class="token-string">--primary</span><span class="token-operator">);</span>
+  <span class="token-property">color</span><span class="token-operator">:</span> <span class="token-keyword">white</span><span class="token-operator">;</span>
+<span class="token-operator">}</span>
 
-.list-item:last-child {
-  background: var(--accent-2);
-  color: var(--dark);
-}
-</code></pre>
+<span class="token-selector">.list-item:last-child</span> <span class="token-operator">{</span>
+  <span class="token-property">background</span><span class="token-operator">:</span> <span class="token-function">var</span><span class="token-operator">(</span><span class="token-string">--accent-2</span><span class="token-operator">);</span>
+  <span class="token-property">color</span><span class="token-operator">:</span> <span class="token-function">var</span><span class="token-operator">(</span><span class="token-string">--dark</span><span class="token-operator">);</span>
+<span class="token-operator">}</span></code></pre>
             </div>
           </div>
           <div class="demo-visual">

@@ -50,6 +50,7 @@
           <div class="nav-links" id="nav-links">
             <a href="../">Home</a>
             <a href="../#about">About</a>
+            <a href="../lab-exercises/">Lab Exercises</a>
             <div class="nav-dropdown">
               <button
                 type="button"
@@ -68,6 +69,7 @@
                 <a href="../animations/">Animations & Transitions</a>
                 <a href="../css-variables/">CSS Variables</a>
                 <a href="../advanced-selectors/">Advanced Selectors</a>
+                <a href="../quiz/">Quiz</a>
               </div>
             </div>
             <a
@@ -147,15 +149,13 @@
                 </svg>
                 Copy
               </button>
-              <pre><code>
-.container {
-  display: flex;
-  justify-content: space-around; /* horizontal alignment */
-  align-items: center;           /* vertical alignment */
-  gap: 10px;                     /* space between items */
-  flex-wrap: wrap;               /* wrap to next line */
-}
-</code></pre>
+              <pre><code><span class="token-selector">.container</span> <span class="token-operator">{</span>
+  <span class="token-property">display</span><span class="token-operator">:</span> <span class="token-keyword">flex</span><span class="token-operator">;</span>
+  <span class="token-property">justify-content</span><span class="token-operator">:</span> <span class="token-keyword">space-around</span><span class="token-operator">;</span> <span class="token-comment">/* horizontal alignment */</span>
+  <span class="token-property">align-items</span><span class="token-operator">:</span> <span class="token-keyword">center</span><span class="token-operator">;</span>           <span class="token-comment">/* vertical alignment */</span>
+  <span class="token-property">gap</span><span class="token-operator">:</span> <span class="token-number">10px</span><span class="token-operator">;</span>                     <span class="token-comment">/* space between items */</span>
+  <span class="token-property">flex-wrap</span><span class="token-operator">:</span> <span class="token-keyword">wrap</span><span class="token-operator">;</span>               <span class="token-comment">/* wrap to next line */</span>
+<span class="token-operator">}</span></code></pre>
             </div>
             <div class="tip-box">
               <strong>When to use:</strong> Use Flexbox when you want to put
@@ -203,18 +203,16 @@
                 </svg>
                 Copy
               </button>
-              <pre><code>
-.container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
-  grid-template-rows: repeat(2, 70px);   /* 2 rows, 70px each */
-  gap: 10px;
-}
+              <pre><code><span class="token-selector">.container</span> <span class="token-operator">{</span>
+  <span class="token-property">display</span><span class="token-operator">:</span> <span class="token-keyword">grid</span><span class="token-operator">;</span>
+  <span class="token-property">grid-template-columns</span><span class="token-operator">:</span> <span class="token-function">repeat</span><span class="token-operator">(</span><span class="token-number">3</span><span class="token-operator">,</span> <span class="token-number">1fr</span><span class="token-operator">);</span> <span class="token-comment">/* 3 equal columns */</span>
+  <span class="token-property">grid-template-rows</span><span class="token-operator">:</span> <span class="token-function">repeat</span><span class="token-operator">(</span><span class="token-number">2</span><span class="token-operator">,</span> <span class="token-number">70px</span><span class="token-operator">);</span>   <span class="token-comment">/* 2 rows, 70px each */</span>
+  <span class="token-property">gap</span><span class="token-operator">:</span> <span class="token-number">10px</span><span class="token-operator">;</span>
+<span class="token-operator">}</span>
 
-.header {
-  grid-column: span 2; /* span across 2 columns */
-}
-</code></pre>
+<span class="token-selector">.header</span> <span class="token-operator">{</span>
+  <span class="token-property">grid-column</span><span class="token-operator">:</span> <span class="token-keyword">span</span> <span class="token-number">2</span><span class="token-operator">;</span> <span class="token-comment">/* span across 2 columns */</span>
+<span class="token-operator">}</span></code></pre>
             </div>
             <div class="tip-box">
               <strong>When to use:</strong> Use Grid when you need both rows and
@@ -263,16 +261,14 @@
                 </svg>
                 Copy
               </button>
-              <pre><code>
-.image {
-  float: left;       /* or float: right */
-  margin-right: 15px;
-}
+              <pre><code><span class="token-selector">.image</span> <span class="token-operator">{</span>
+  <span class="token-property">float</span><span class="token-operator">:</span> <span class="token-keyword">left</span><span class="token-operator">;</span>       <span class="token-comment">/* or float: right */</span>
+  <span class="token-property">margin-right</span><span class="token-operator">:</span> <span class="token-number">15px</span><span class="token-operator">;</span>
+<span class="token-operator">}</span>
 
-.container {
-  overflow: hidden;  /* clearfix hack */
-}
-</code></pre>
+<span class="token-selector">.container</span> <span class="token-operator">{</span>
+  <span class="token-property">overflow</span><span class="token-operator">:</span> <span class="token-keyword">hidden</span><span class="token-operator">;</span>  <span class="token-comment">/* clearfix hack */</span>
+<span class="token-operator">}</span></code></pre>
             </div>
             <div class="warning-box">
               <strong>Warning:</strong> Don't use float for page layouts. It

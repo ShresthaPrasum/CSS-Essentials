@@ -50,6 +50,7 @@
           <div class="nav-links" id="nav-links">
             <a href="../">Home</a>
             <a href="../#about">About</a>
+            <a href="../lab-exercises/">Lab Exercises</a>
             <div class="nav-dropdown">
               <button
                 type="button"
@@ -68,6 +69,7 @@
                 <a href="../animations/">Animations & Transitions</a>
                 <a href="../css-variables/">CSS Variables</a>
                 <a href="../advanced-selectors/">Advanced Selectors</a>
+                <a href="../quiz/">Quiz</a>
               </div>
             </div>
             <a
@@ -130,16 +132,16 @@
                 </svg>
                 Copy
               </button>
-              <pre><code>.container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
-}
+              <pre><code><span class="token-selector">.container</span> <span class="token-operator">{</span>
+  <span class="token-property">display</span><span class="token-operator">:</span> <span class="token-keyword">grid</span><span class="token-operator">;</span>
+  <span class="token-property">grid-template-columns</span><span class="token-operator">:</span> <span class="token-function">repeat</span><span class="token-operator">(</span><span class="token-number">3</span><span class="token-operator">,</span> <span class="token-number">1fr</span><span class="token-operator">);</span>
+  <span class="token-property">gap</span><span class="token-operator">:</span> <span class="token-number">1rem</span><span class="token-operator">;</span>
+<span class="token-operator">}</span>
 
-.item {
-  background: var(--primary);
-  padding: 2rem;
-}</code></pre>
+<span class="token-selector">.item</span> <span class="token-operator">{</span>
+  <span class="token-property">background</span><span class="token-operator">:</span> <span class="token-function">var</span><span class="token-operator">(</span><span class="token-string">--primary</span><span class="token-operator">);</span>
+  <span class="token-property">padding</span><span class="token-operator">:</span> <span class="token-number">2rem</span><span class="token-operator">;</span>
+<span class="token-operator">}</span></code></pre>
             </div>
           </div>
           <div class="demo-visual">
@@ -170,13 +172,13 @@
                 </svg>
                 Copy
               </button>
-              <pre><code>.container {
-  display: grid;
-  grid-template-columns: 200px 1fr 1fr;
-  /* or: repeat(3, 1fr) */
-  /* or: minmax(200px, 1fr) */
-  gap: 1rem;
-}</code></pre>
+              <pre><code><span class="token-selector">.container</span> <span class="token-operator">{</span>
+  <span class="token-property">display</span><span class="token-operator">:</span> <span class="token-keyword">grid</span><span class="token-operator">;</span>
+  <span class="token-property">grid-template-columns</span><span class="token-operator">:</span> <span class="token-number">200px</span> <span class="token-number">1fr</span> <span class="token-number">1fr</span><span class="token-operator">;</span>
+  <span class="token-comment">/* or: repeat(3, 1fr) */</span>
+  <span class="token-comment">/* or: minmax(200px, 1fr) */</span>
+  <span class="token-property">gap</span><span class="token-operator">:</span> <span class="token-number">1rem</span><span class="token-operator">;</span>
+<span class="token-operator">}</span></code></pre>
             </div>
           </div>
           <div class="demo-visual">
@@ -208,12 +210,12 @@
                 </svg>
                 Copy
               </button>
-              <pre><code>.container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem; /* same for rows and columns */
-  /* or: gap: 1rem 2rem; (row gap, column gap) */
-}</code></pre>
+              <pre><code><span class="token-selector">.container</span> <span class="token-operator">{</span>
+  <span class="token-property">display</span><span class="token-operator">:</span> <span class="token-keyword">grid</span><span class="token-operator">;</span>
+  <span class="token-property">grid-template-columns</span><span class="token-operator">:</span> <span class="token-function">repeat</span><span class="token-operator">(</span><span class="token-number">3</span><span class="token-operator">,</span> <span class="token-number">1fr</span><span class="token-operator">);</span>
+  <span class="token-property">gap</span><span class="token-operator">:</span> <span class="token-number">2rem</span><span class="token-operator">;</span> <span class="token-comment">/* same for rows and columns */</span>
+  <span class="token-comment">/* or: gap: 1rem 2rem; (row gap, column gap) */</span>
+<span class="token-operator">}</span></code></pre>
             </div>
           </div>
           <div class="demo-visual">
@@ -244,16 +246,16 @@
                 </svg>
                 Copy
               </button>
-              <pre><code>.item-span {
-  grid-column: 1 / 3; /* span from line 1 to 3 (2 columns) */
-  grid-row: 1 / 3;    /* span from line 1 to 3 (2 rows) */
-}
+              <pre><code><span class="token-selector">.item-span</span> <span class="token-operator">{</span>
+  <span class="token-property">grid-column</span><span class="token-operator">:</span> <span class="token-number">1</span> <span class="token-operator">/</span> <span class="token-number">3</span><span class="token-operator">;</span> <span class="token-comment">/* span from line 1 to 3 (2 columns) */</span>
+  <span class="token-property">grid-row</span><span class="token-operator">:</span> <span class="token-number">1</span> <span class="token-operator">/</span> <span class="token-number">3</span><span class="token-operator">;</span>    <span class="token-comment">/* span from line 1 to 3 (2 rows) */</span>
+<span class="token-operator">}</span>
 
-/* shorthand */
-.item-span {
-  grid-column: span 2; /* span 2 columns */
-  grid-row: span 2;    /* span 2 rows */
-}</code></pre>
+<span class="token-comment">/* shorthand */</span>
+<span class="token-selector">.item-span</span> <span class="token-operator">{</span>
+  <span class="token-property">grid-column</span><span class="token-operator">:</span> <span class="token-keyword">span</span> <span class="token-number">2</span><span class="token-operator">;</span> <span class="token-comment">/* span 2 columns */</span>
+  <span class="token-property">grid-row</span><span class="token-operator">:</span> <span class="token-keyword">span</span> <span class="token-number">2</span><span class="token-operator">;</span>    <span class="token-comment">/* span 2 rows */</span>
+<span class="token-operator">}</span></code></pre>
             </div>
           </div>
           <div class="demo-visual">
@@ -282,19 +284,19 @@
                 </svg>
                 Copy
               </button>
-              <pre><code>.container {
-  display: grid;
-  grid-template-areas:
-    "header header"
-    "sidebar main"
-    "footer footer";
-  grid-template-columns: 250px 1fr;
-}
+              <pre><code><span class="token-selector">.container</span> <span class="token-operator">{</span>
+  <span class="token-property">display</span><span class="token-operator">:</span> <span class="token-keyword">grid</span><span class="token-operator">;</span>
+  <span class="token-property">grid-template-areas</span><span class="token-operator">:</span>
+    <span class="token-string">"header header"</span>
+    <span class="token-string">"sidebar main"</span>
+    <span class="token-string">"footer footer"</span><span class="token-operator">;</span>
+  <span class="token-property">grid-template-columns</span><span class="token-operator">:</span> <span class="token-number">250px</span> <span class="token-number">1fr</span><span class="token-operator">;</span>
+<span class="token-operator">}</span>
 
-.header { grid-area: header; }
-.sidebar { grid-area: sidebar; }
-.main { grid-area: main; }
-.footer { grid-area: footer; }</code></pre>
+<span class="token-selector">.header</span> <span class="token-operator">{</span> <span class="token-property">grid-area</span><span class="token-operator">:</span> <span class="token-keyword">header</span><span class="token-operator">;</span> <span class="token-operator">}</span>
+<span class="token-selector">.sidebar</span> <span class="token-operator">{</span> <span class="token-property">grid-area</span><span class="token-operator">:</span> <span class="token-keyword">sidebar</span><span class="token-operator">;</span> <span class="token-operator">}</span>
+<span class="token-selector">.main</span> <span class="token-operator">{</span> <span class="token-property">grid-area</span><span class="token-operator">:</span> <span class="token-keyword">main</span><span class="token-operator">;</span> <span class="token-operator">}</span>
+<span class="token-selector">.footer</span> <span class="token-operator">{</span> <span class="token-property">grid-area</span><span class="token-operator">:</span> <span class="token-keyword">footer</span><span class="token-operator">;</span> <span class="token-operator">}</span></code></pre>
             </div>
           </div>
           <div class="demo-visual">

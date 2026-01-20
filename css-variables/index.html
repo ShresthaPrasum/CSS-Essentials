@@ -50,6 +50,7 @@
           <div class="nav-links" id="nav-links">
             <a href="../">Home</a>
             <a href="../#about">About</a>
+            <a href="../lab-exercises/">Lab Exercises</a>
             <div class="nav-dropdown">
               <button
                 type="button"
@@ -68,6 +69,7 @@
                 <a href="../animations/">Animations & Transitions</a>
                 <a href="../css-variables/">CSS Variables</a>
                 <a href="../advanced-selectors/">Advanced Selectors</a>
+                <a href="../quiz/">Quiz</a>
               </div>
             </div>
             <a
@@ -130,18 +132,18 @@
                 </svg>
                 Copy
               </button>
-              <pre><code>:root {
-  --primary: #1e78a8;
-  --primary-dark: #145b7d;
-  --spacing: 1rem;
-  --border-radius: 8px;
-  --transition-speed: 0.3s;
-}
+              <pre><code><span class="token-keyword">:root</span> <span class="token-operator">{</span>
+  <span class="token-property">--primary</span><span class="token-operator">:</span> <span class="token-string">#1e78a8</span><span class="token-operator">;</span>
+  <span class="token-property">--primary-dark</span><span class="token-operator">:</span> <span class="token-string">#145b7d</span><span class="token-operator">;</span>
+  <span class="token-property">--spacing</span><span class="token-operator">:</span> <span class="token-number">1rem</span><span class="token-operator">;</span>
+  <span class="token-property">--border-radius</span><span class="token-operator">:</span> <span class="token-number">8px</span><span class="token-operator">;</span>
+  <span class="token-property">--transition-speed</span><span class="token-operator">:</span> <span class="token-number">0.3s</span><span class="token-operator">;</span>
+<span class="token-operator">}</span>
 
-body {
-  font-size: var(--font-size-base);
-  color: var(--text-color);
-}</code></pre>
+<span class="token-selector">body</span> <span class="token-operator">{</span>
+  <span class="token-property">font-size</span><span class="token-operator">:</span> <span class="token-function">var</span><span class="token-operator">(</span><span class="token-string">--font-size-base</span><span class="token-operator">);</span>
+  <span class="token-property">color</span><span class="token-operator">:</span> <span class="token-function">var</span><span class="token-operator">(</span><span class="token-string">--text-color</span><span class="token-operator">);</span>
+<span class="token-operator">}</span></code></pre>
             </div>
           </div>
           <div class="demo-visual">
@@ -169,19 +171,19 @@ body {
                 </svg>
                 Copy
               </button>
-              <pre><code>/* Define */
-:root {
-  --primary: #1e78a8;
-  --padding: 1.5rem;
-}
+              <pre><code><span class="token-comment">/* Define */</span>
+<span class="token-keyword">:root</span> <span class="token-operator">{</span>
+  <span class="token-property">--primary</span><span class="token-operator">:</span> <span class="token-string">#1e78a8</span><span class="token-operator">;</span>
+  <span class="token-property">--padding</span><span class="token-operator">:</span> <span class="token-number">1.5rem</span><span class="token-operator">;</span>
+<span class="token-operator">}</span>
 
-/* Use */
-.button {
-  background: var(--primary);
-  padding: var(--padding);
-  border-radius: var(--border-radius);
-  transition: all var(--transition-speed);
-}</code></pre>
+<span class="token-comment">/* Use */</span>
+<span class="token-selector">.button</span> <span class="token-operator">{</span>
+  <span class="token-property">background</span><span class="token-operator">:</span> <span class="token-function">var</span><span class="token-operator">(</span><span class="token-string">--primary</span><span class="token-operator">);</span>
+  <span class="token-property">padding</span><span class="token-operator">:</span> <span class="token-function">var</span><span class="token-operator">(</span><span class="token-string">--padding</span><span class="token-operator">);</span>
+  <span class="token-property">border-radius</span><span class="token-operator">:</span> <span class="token-function">var</span><span class="token-operator">(</span><span class="token-string">--border-radius</span><span class="token-operator">);</span>
+  <span class="token-property">transition</span><span class="token-operator">:</span> <span class="token-keyword">all</span> <span class="token-function">var</span><span class="token-operator">(</span><span class="token-string">--transition-speed</span><span class="token-operator">);</span>
+<span class="token-operator">}</span></code></pre>
             </div>
           </div>
           <div class="demo-visual">
@@ -212,26 +214,26 @@ body {
                 </svg>
                 Copy
               </button>
-              <pre><code>/* Global */
-:root {
-  --primary: blue;
-}
+              <pre><code><span class="token-comment">/* Global */</span>
+<span class="token-keyword">:root</span> <span class="token-operator">{</span>
+  <span class="token-property">--primary</span><span class="token-operator">:</span> <span class="token-keyword">blue</span><span class="token-operator">;</span>
+<span class="token-operator">}</span>
 
-/* Local to .container */
-.container {
-  --primary: green; /* overrides global in this scope */
-}
+<span class="token-comment">/* Local to .container */</span>
+<span class="token-selector">.container</span> <span class="token-operator">{</span>
+  <span class="token-property">--primary</span><span class="token-operator">:</span> <span class="token-keyword">green</span><span class="token-operator">;</span> <span class="token-comment">/* overrides global in this scope */</span>
+<span class="token-operator">}</span>
 
-/* Local to .dark-theme */
-.dark-theme {
-  --bg: #1f2937;
-  --text: #ffffff;
-}
+<span class="token-comment">/* Local to .dark-theme */</span>
+<span class="token-selector">.dark-theme</span> <span class="token-operator">{</span>
+  <span class="token-property">--bg</span><span class="token-operator">:</span> <span class="token-string">#1f2937</span><span class="token-operator">;</span>
+  <span class="token-property">--text</span><span class="token-operator">:</span> <span class="token-string">#ffffff</span><span class="token-operator">;</span>
+<span class="token-operator">}</span>
 
-/* Children inherit */
-.container .button {
-  background: var(--primary); /* uses local green */
-}</code></pre>
+<span class="token-comment">/* Children inherit */</span>
+<span class="token-selector">.container .button</span> <span class="token-operator">{</span>
+  <span class="token-property">background</span><span class="token-operator">:</span> <span class="token-function">var</span><span class="token-operator">(</span><span class="token-string">--primary</span><span class="token-operator">);</span> <span class="token-comment">/* uses local green */</span>
+<span class="token-operator">}</span></code></pre>
             </div>
           </div>
           <div class="demo-visual">
@@ -258,21 +260,21 @@ body {
                 </svg>
                 Copy
               </button>
-              <pre><code>/* If --custom doesn't exist, use red */
-.box {
-  background: var(--custom, red);
-}
+              <pre><code><span class="token-comment">/* If --custom doesn't exist, use red */</span>
+<span class="token-selector">.box</span> <span class="token-operator">{</span>
+  <span class="token-property">background</span><span class="token-operator">:</span> <span class="token-function">var</span><span class="token-operator">(</span><span class="token-string">--custom</span><span class="token-operator">,</span> <span class="token-keyword">red</span><span class="token-operator">);</span>
+<span class="token-operator">}</span>
 
-/* Multi-level fallback */
-.text {
-  color: var(--heading-color, var(--text-color, black));
-}
+<span class="token-comment">/* Multi-level fallback */</span>
+<span class="token-selector">.text</span> <span class="token-operator">{</span>
+  <span class="token-property">color</span><span class="token-operator">:</span> <span class="token-function">var</span><span class="token-operator">(</span><span class="token-string">--heading-color</span><span class="token-operator">,</span> <span class="token-function">var</span><span class="token-operator">(</span><span class="token-string">--text-color</span><span class="token-operator">,</span> <span class="token-keyword">black</span><span class="token-operator">));</span>
+<span class="token-operator">}</span>
 
-/* Fallback with calculation */
-.padding {
-  padding: var(--padding, 1rem);
-  margin: var(--margin, calc(var(--padding, 1rem) * 2));
-}</code></pre>
+<span class="token-comment">/* Fallback with calculation */</span>
+<span class="token-selector">.padding</span> <span class="token-operator">{</span>
+  <span class="token-property">padding</span><span class="token-operator">:</span> <span class="token-function">var</span><span class="token-operator">(</span><span class="token-string">--padding</span><span class="token-operator">,</span> <span class="token-number">1rem</span><span class="token-operator">);</span>
+  <span class="token-property">margin</span><span class="token-operator">:</span> <span class="token-function">var</span><span class="token-operator">(</span><span class="token-string">--margin</span><span class="token-operator">,</span> <span class="token-function">calc</span><span class="token-operator">(</span><span class="token-function">var</span><span class="token-operator">(</span><span class="token-string">--padding</span><span class="token-operator">,</span> <span class="token-number">1rem</span><span class="token-operator">)</span> <span class="token-operator">*</span> <span class="token-number">2</span><span class="token-operator">));</span>
+<span class="token-operator">}</span></code></pre>
             </div>
           </div>
           <div class="demo-visual">
@@ -299,23 +301,23 @@ body {
                 </svg>
                 Copy
               </button>
-              <pre><code>const root = document.documentElement;
+              <pre><code><span class="token-keyword">const</span> <span class="token-variable">root</span> <span class="token-operator">=</span> <span class="token-function">document</span>.<span class="token-property">documentElement</span><span class="token-operator">;</span>
 
-/* Get a variable */
-const color = root.style
-  .getPropertyValue('--primary')
-  .trim();
+<span class="token-comment">/* Get a variable */</span>
+<span class="token-keyword">const</span> <span class="token-variable">color</span> <span class="token-operator">=</span> <span class="token-variable">root</span>.<span class="token-property">style</span>
+  .<span class="token-function">getPropertyValue</span><span class="token-operator">(</span><span class="token-string">'--primary'</span><span class="token-operator">)</span>
+  .<span class="token-function">trim</span><span class="token-operator">();</span>
 
-/* Set a variable */
-root.style.setProperty('--primary', '#ff0000');
+<span class="token-comment">/* Set a variable */</span>
+<span class="token-variable">root</span>.<span class="token-property">style</span>.<span class="token-function">setProperty</span><span class="token-operator">(</span><span class="token-string">'--primary'</span><span class="token-operator">,</span> <span class="token-string">'#ff0000'</span><span class="token-operator">);</span>
 
-/* Theme switcher */
-document.querySelectorAll('.vars-js-btn').forEach((btn) => {
-  btn.addEventListener('click', function() {
-    const color = this.dataset.color;
-    root.style.setProperty('--primary', color);
-  });
-});</code></pre>
+<span class="token-comment">/* Theme switcher */</span>
+<span class="token-function">document</span>.<span class="token-function">querySelectorAll</span><span class="token-operator">(</span><span class="token-string">'.vars-js-btn'</span><span class="token-operator">).</span><span class="token-function">forEach</span><span class="token-operator">((</span><span class="token-variable">btn</span><span class="token-operator">)</span> <span class="token-operator">=&gt;</span> <span class="token-operator">{</span>
+  <span class="token-variable">btn</span>.<span class="token-function">addEventListener</span><span class="token-operator">(</span><span class="token-string">'click'</span><span class="token-operator">,</span> <span class="token-keyword">function</span><span class="token-operator">(){</span>
+    <span class="token-keyword">const</span> <span class="token-variable">color</span> <span class="token-operator">=</span> <span class="token-keyword">this</span>.<span class="token-property">dataset</span>.<span class="token-property">color</span><span class="token-operator">;</span>
+    <span class="token-variable">root</span>.<span class="token-property">style</span>.<span class="token-function">setProperty</span><span class="token-operator">(</span><span class="token-string">'--primary'</span><span class="token-operator">,</span> <span class="token-variable">color</span><span class="token-operator">);</span>
+  <span class="token-operator">}</span><span class="token-operator">);</span>
+<span class="token-operator">}</span><span class="token-operator">);</span></code></pre>
             </div>
           </div>
           <div class="demo-visual">
